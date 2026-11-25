@@ -13,7 +13,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
 
         message = (
-            "Hello from DevOps Final Project!\n"
+            "Hello from My First Git Project!\n"
             f"Environment: {APP_ENV}\n"
             f"Version: {APP_VERSION}\n"
             f"Container: {HOSTNAME}\n"
