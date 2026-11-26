@@ -12,6 +12,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
 
+        # Temporary test for git stash
         if self.path == "/health":
             message = b"OK\n"
             self.send_response(200)
