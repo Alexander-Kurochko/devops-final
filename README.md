@@ -152,3 +152,4 @@ http://127.0.0.1:8089/
 Проект демонстрирует базовые навыки контейнеризации, настройки Reverse Proxy, управления инфраструктурой через Docker Compose, мониторинга состояния контейнеров и применения базовых практик безопасности.
 
 This line was added directly on GitHub.
+This change will be downloaded using git fetch. This change will be downloaded using git fetch.
