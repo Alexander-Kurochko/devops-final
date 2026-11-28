@@ -1,1 +1,15 @@
 .env
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Backup files
+*.sql
+*.bak
+
+# Temporary files
+*.tmp
