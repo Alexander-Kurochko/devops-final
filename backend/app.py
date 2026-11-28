@@ -12,6 +12,24 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
 
+        if self.path == "/info":
+            import json
+
+            data = {
+                "environment": APP_ENV,
+                "version": APP_VERSION,
+                "hostname": HOSTNAME
+            }
+
+            message = json.dumps(data).encode()
+
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(message)))
+            self.end_headers()
+            self.wfile.write(message)
+            return
+
         if self.path == "/health":
             message = b"OK\n"
             self.send_response(200)
